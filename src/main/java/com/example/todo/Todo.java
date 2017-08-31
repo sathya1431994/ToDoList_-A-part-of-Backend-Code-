@@ -11,6 +11,7 @@ class Todo {
     private String name;
     private String status;
     private String priority;
+    private Boolean isCompleted;
 
     public void setId(Long id) {
         this.id = id;
@@ -42,6 +43,14 @@ class Todo {
 
     public String getPriority() {
         return priority;
+    }
+
+    public void setBoolean(Boolean isCompleted) {
+        this.isCompleted = isCompleted;
+    }
+
+    public Boolean getBoolean() {
+        return isCompleted;
     }
 
 }
