@@ -55,7 +55,7 @@ public class TodoControllerIT {
     @Test
     public void getItemsShouldReturnBothItems() {
         when().get(TODOS_RESOURCE).then().statusCode(HttpStatus.SC_OK).body(NAME_FIELD,
-                hasItems(FIRST_TODO_NAME, SECOND_TODO_NAME));
+                hasItems(FIRST_TODO_NAME, FIRST_TODO_NAME));
     }
 
     @Test
